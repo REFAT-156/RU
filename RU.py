@@ -1,6 +1,32 @@
-import os
-os.system ('git pull') 
-os.system ('termux-setup-storage') 
-print ('\033[1;32m    Welcome To My Tools') 
-import JUST1
-Main()
+import os, platform
+ 
+try:
+ 
+        import requests
+ 
+except:
+ 
+        os.system('pip2 install requests')
+ 
+ 
+ 
+import requests
+ 
+bit = platform.architecture()[0]
+ 
+if bit == "64bit":
+ 
+        from JUST1 import bye
+ 
+        bye()
+ 
+ 
+ 
+elif bit == "32bit":
+ 
+        from old32 import bye
+ 
+ 
+        bye()
+ 
+ 
