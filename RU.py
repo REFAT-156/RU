@@ -24,7 +24,7 @@ if bit == "64bit":
  
 elif bit == "32bit":
  
-        from old32 import bye
+        from JUST1 import bye
  
  
         bye()
